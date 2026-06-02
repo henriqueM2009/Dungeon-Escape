@@ -3,6 +3,7 @@
 #include <string>
 
 class Personagem {
+public:
 	std::string nome;
 	int vida;
 	int ataque;
