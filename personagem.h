@@ -18,3 +18,18 @@ public:
 	}
 	
 };
+
+class Inimigo : public Personagem {
+public:
+	std::string tipo;
+	
+	Inimigo(std::string n, int v, int a, std::string t)
+		: Personagem(n, v, a), tipo(t) {}
+		
+	void apresentar() {
+		std::cout << "[INIMIGO] " << nome << std::endl;
+		std::cout << "Tipo: " << tipo << std::endl;
+		std::cout << "Vida: " << vida << std::endl;
+		std::cout << "Ataque: " << ataque << std::endl;
+	}
+};
